@@ -39,8 +39,7 @@
 
 ## 🎥 Video Link
 
-**Video Link**: [Paste your video link here]
-
+**Video Link**: https://drive.google.com/file/d/1J3tD7gX8GZI0GTuZHkQI0RQ0OmawypDJ/view?usp=sharing
 > ⚠️ **WARNING:** The video must be **publicly accessible** ("Anyone with the link can view") on **Google Drive**, **YouTube (Unlisted or Public)** or any other cloud file-sharing system. A private, restricted or broken link counts as a **missing video (-1 mark)**.
 >
 > 💡 **TIP:** Open the link in a **private/incognito window** before you submit. If it asks you to log in or request access, it is not public.
