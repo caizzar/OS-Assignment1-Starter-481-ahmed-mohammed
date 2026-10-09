@@ -255,7 +255,8 @@ I would implement a dynamic input system that allows users to add new processes 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I learned that multithreading allows a program to run multiple tasks at the same time. I learned how to create threads using the `Runnable` interface and start them with `Thread.start()`. I also learned how to use `Thread.join()` to make one thread wait for another thread to finish. Using `Thread.sleep()` helped me understand how to pause a thread for a short time. I discovered that threads can run in different orders, so the output may not always be the same. Overall, this assignment helped me understand how multithreading works in Java and why it is useful.
+
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -263,7 +264,7 @@ I would implement a dynamic input system that allows users to add new processes 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+The hardest part of this assignment was correctly keeping track of the waiting time for Feature 3. It was difficult to manage the timestamps using the System.currentTimeMillis() method as the processes were constantly yielding the CPU and returning to the ready queue after a certain time quantum. I had to make sure that the logic for the waiting time only included the waiting time for the processes and did not include their execution time. Another challenge was making sure the Context Switch Counter was implemented correctly so that it only increased the count when a new process started execution. This required a lot of digging through the loop structure to understand the flow of the simulation.
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -271,7 +272,7 @@ I would implement a dynamic input system that allows users to add new processes 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+To address this problem, I used a systematic debugging method by printing logs to the terminal to observe the states of variables such as remainingTime and totalWaitTime. In addition, I studied the documentation of the starter code and the README.md file to understand the relationship between the Process class and the SchedulerSimulation loop. In the waiting time part of the code, I utilized the lastReadyTime field to find the time difference every time a process was retrieved from the queue and scheduled to run. Furthermore, I utilized professional tools such as the built-in Git feature of Visual Studio Code to track my commits on each feature before moving to the next one. This systematic approach helped me detect logic errors and ensured that the context switch counter was being incremented at the right time during the scheduling simulation.
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -279,7 +280,7 @@ I would implement a dynamic input system that allows users to add new processes 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+The concepts of multithreading programming are very important for developing real-life applications like Web Browsers, where each tab of the browser can be run on a different thread to ensure that if one website is taking too long to load, it does not freeze the entire window. Another example is Media Players, where one thread can be used for user interface and another thread for decoding and playing a video file in the background. Game Engines also require threads for different tasks like physics, rendering, and sound processing to ensure high frame rates. This assignment has taught me how important the concept of Round Robin Scheduling is for these types of applications, where fairness and avoidance of CPU monopolization by a single task are required. By applying these concepts of multithreading programming, developers can ensure efficiency and predictability of their systems to handle multiple users or tasks at once.
 
 ### Optional: What would you like to learn more about?
 
