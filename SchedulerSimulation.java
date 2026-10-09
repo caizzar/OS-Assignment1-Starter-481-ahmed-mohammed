@@ -138,6 +138,9 @@ class Process implements Runnable {
     public int getRemainingTime() {
         return remainingTime;
     }
+      public int getPriority() {
+        return priority;
+    }
 
     // Check if the process has finished (i.e., no remaining time)
     public boolean isFinished() {
